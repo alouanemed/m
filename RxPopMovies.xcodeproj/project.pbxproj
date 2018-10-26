@@ -79,7 +79,7 @@
 		BCD8C8C21E73472400F79E3E /* RMCompany.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCD8C8C11E73472400F79E3E /* RMCompany.swift */; };
 		BCD8C8C41E73473300F79E3E /* RMPhoto.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCD8C8C31E73473300F79E3E /* RMPhoto.swift */; };
 		BCD8C8C61E73474600F79E3E /* RMTodo.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCD8C8C51E73474600F79E3E /* RMTodo.swift */; };
-		BCD8C8C81E73475000F79E3E /* RMUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCD8C8C71E73475000F79E3E /* RMUser.swift */; };
+		BCD8C8C81E73475000F79E3E /* RMMovie.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCD8C8C71E73475000F79E3E /* RMMovie.swift */; };
 		BD107F521E7298690043D900 /* NetworkPlatform.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD107F491E7298690043D900 /* NetworkPlatform.framework */; };
 		BD107F591E72986A0043D900 /* NetworkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD107F581E72986A0043D900 /* NetworkTests.swift */; };
 		BD107F5B1E72986A0043D900 /* Network.h in Headers */ = {isa = PBXBuildFile; fileRef = BD107F4B1E7298690043D900 /* Network.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -304,7 +304,7 @@
 		BCD8C8C11E73472400F79E3E /* RMCompany.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RMCompany.swift; sourceTree = "<group>"; };
 		BCD8C8C31E73473300F79E3E /* RMPhoto.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RMPhoto.swift; sourceTree = "<group>"; };
 		BCD8C8C51E73474600F79E3E /* RMTodo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RMTodo.swift; sourceTree = "<group>"; };
-		BCD8C8C71E73475000F79E3E /* RMUser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RMUser.swift; sourceTree = "<group>"; };
+		BCD8C8C71E73475000F79E3E /* RMMovie.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RMMovie.swift; sourceTree = "<group>"; };
 		BD107F491E7298690043D900 /* NetworkPlatform.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NetworkPlatform.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD107F4B1E7298690043D900 /* Network.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Network.h; sourceTree = "<group>"; };
 		BD107F4C1E7298690043D900 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -619,7 +619,7 @@
 				BCD8C8C31E73473300F79E3E /* RMPhoto.swift */,
 				515F988220373D06226F4EDE /* RMPost.swift */,
 				BCD8C8C51E73474600F79E3E /* RMTodo.swift */,
-				BCD8C8C71E73475000F79E3E /* RMUser.swift */,
+				BCD8C8C71E73475000F79E3E /* RMMovie.swift */,
 			);
 			path = Entities;
 			sourceTree = "<group>";
@@ -1658,7 +1658,7 @@
 				515F9CD8F2B13D0328B77B6C /* Realm+Ext.swift in Sources */,
 				515F9503C6F079D663CD9072 /* Repository.swift in Sources */,
 				515F94802804A5FEB69837C8 /* PostsUseCase.swift in Sources */,
-				BCD8C8C81E73475000F79E3E /* RMUser.swift in Sources */,
+				BCD8C8C81E73475000F79E3E /* RMMovie.swift in Sources */,
 				515F978F1DBE7C45646004F1 /* Observable+Ext.swift in Sources */,
 				BCD8C8C01E73471A00F79E3E /* RMComment.swift in Sources */,
 				BCD8C8C21E73472400F79E3E /* RMCompany.swift in Sources */,

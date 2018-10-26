@@ -11,7 +11,7 @@ import Domain
 import RealmSwift
 import Realm
 
-final class RMUser: Object {
+final class RMMovie: Object {
 
     @objc dynamic var address: RMAddress?
     @objc dynamic var company: RMCompany?
@@ -27,7 +27,7 @@ final class RMUser: Object {
     }
 }
 
-extension RMUser {
+extension Movie {
     static var website: Attribute<String> { return Attribute("website")}
     static var email: Attribute<String> { return Attribute("email")}
     static var name: Attribute<String> { return Attribute("name")}
@@ -38,8 +38,8 @@ extension RMUser {
     static var company: Attribute<RMCompany> { return Attribute("company")}
 }
 
-extension RMUser: DomainConvertibleType {
-    func asDomain() -> User {
+extension RMMovie: DomainConvertibleType {
+    func asDomain() -> Movie {
         return User(address: address!.asDomain(),
                     company: company!.asDomain(),
                     email: email,
