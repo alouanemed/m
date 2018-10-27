@@ -6,7 +6,7 @@ public final class UseCaseProvider: Domain.UseCaseProvider {
 
     public init() {
         networkProvider = NetworkProvider()
-    }
+     }
 
     public func makeMoviesUseCase() -> Domain.MoviesUseCase {
         return MoviesUseCase(network: networkProvider.makeMoviesNetwork(),

@@ -22,8 +22,6 @@
 		25897B3D1E58BF0D00D3563C /* Domain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25897B281E58BF0D00D3563C /* Domain.framework */; };
 		25897B3E1E58BF0D00D3563C /* Domain.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 25897B281E58BF0D00D3563C /* Domain.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		25897B541E58BF3600D3563C /* CoreDataPlatform.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25897B4B1E58BF3600D3563C /* CoreDataPlatform.framework */; };
-		25897B601E58BF3600D3563C /* CoreDataPlatform.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25897B4B1E58BF3600D3563C /* CoreDataPlatform.framework */; };
-		25897B611E58BF3600D3563C /* CoreDataPlatform.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 25897B4B1E58BF3600D3563C /* CoreDataPlatform.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		25897B761E58BF4600D3563C /* RealmPlatform.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25897B6D1E58BF4600D3563C /* RealmPlatform.framework */; };
 		25897B7D1E58BF4600D3563C /* RealmPlatformTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25897B7C1E58BF4600D3563C /* RealmPlatformTests.swift */; };
 		25897B7F1E58BF4600D3563C /* RealmPlatform.h in Headers */ = {isa = PBXBuildFile; fileRef = 25897B6F1E58BF4600D3563C /* RealmPlatform.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -39,6 +37,8 @@
 		25897BF91E58CB8F00D3563C /* Observable+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25897BEB1E58CB8E00D3563C /* Observable+Ext.swift */; };
 		25897BFB1E58CB8F00D3563C /* Reusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25897BED1E58CB8E00D3563C /* Reusable.swift */; };
 		25897BFC1E58CB8F00D3563C /* ViewModelType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25897BEF1E58CB8E00D3563C /* ViewModelType.swift */; };
+		48DF84842184911200920FFD /* MovieEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48DF84832184911200920FFD /* MovieEntity.swift */; };
+		48DF84862184951800920FFD /* RMMovie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48DF84852184951800920FFD /* RMMovie.swift */; };
 		48F0849D217FA5B500E50618 /* MoviesNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48F0849C217FA5B500E50618 /* MoviesNavigator.swift */; };
 		48F0849F217FA79700E50618 /* MoviesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48F0849E217FA79700E50618 /* MoviesViewController.swift */; };
 		48F084A1217FAA5900E50618 /* MoviesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48F084A0217FAA5900E50618 /* MoviesViewModel.swift */; };
@@ -51,7 +51,7 @@
 		48F084AF2180FF7500E50618 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48F084AE2180FF7500E50618 /* Movie.swift */; };
 		4BE3E89D3016B4C8DFFD02F4 /* Pods_RxPopMoviesTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 019E87FE245EB014FF9D0B42 /* Pods_RxPopMoviesTests.framework */; };
 		515F9256E79E1689380314E5 /* UseCaseProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 515F987F4A5AF48B9A5451F3 /* UseCaseProvider.swift */; };
-		515F94802804A5FEB69837C8 /* PostsUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 515F9359DD575F7E65FE22AF /* PostsUseCase.swift */; };
+		515F94802804A5FEB69837C8 /* MoviesUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 515F9359DD575F7E65FE22AF /* MoviesUseCase.swift */; };
 		515F9503C6F079D663CD9072 /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 515F92C7826B9C51A1FB4BED /* Repository.swift */; };
 		515F953C72C69919A1104FE7 /* UseCaseProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 515F9C31AF4C4644DBDAE735 /* UseCaseProvider.swift */; };
 		515F9590146BEE2A0626CFF1 /* MovieTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 515F9AF2348793558FE0CAA7 /* MovieTableViewCell.swift */; };
@@ -79,7 +79,6 @@
 		BCD8C8C21E73472400F79E3E /* RMCompany.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCD8C8C11E73472400F79E3E /* RMCompany.swift */; };
 		BCD8C8C41E73473300F79E3E /* RMPhoto.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCD8C8C31E73473300F79E3E /* RMPhoto.swift */; };
 		BCD8C8C61E73474600F79E3E /* RMTodo.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCD8C8C51E73474600F79E3E /* RMTodo.swift */; };
-		BCD8C8C81E73475000F79E3E /* RMMovie.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCD8C8C71E73475000F79E3E /* RMMovie.swift */; };
 		BD107F521E7298690043D900 /* NetworkPlatform.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD107F491E7298690043D900 /* NetworkPlatform.framework */; };
 		BD107F591E72986A0043D900 /* NetworkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD107F581E72986A0043D900 /* NetworkTests.swift */; };
 		BD107F5B1E72986A0043D900 /* Network.h in Headers */ = {isa = PBXBuildFile; fileRef = BD107F4B1E7298690043D900 /* Network.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -148,13 +147,6 @@
 			remoteGlobalIDString = 25897AFF1E58BD9100D3563C;
 			remoteInfo = CleanArchitectureRxSwift;
 		};
-		25897B5E1E58BF3600D3563C /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 25897AF81E58BD9100D3563C /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 25897B4A1E58BF3600D3563C;
-			remoteInfo = CoreDataPlatform;
-		};
 		25897B771E58BF4600D3563C /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 25897AF81E58BD9100D3563C /* Project object */;
@@ -207,7 +199,6 @@
 			dstSubfolderSpec = 10;
 			files = (
 				25897B831E58BF4600D3563C /* RealmPlatform.framework in Embed Frameworks */,
-				25897B611E58BF3600D3563C /* CoreDataPlatform.framework in Embed Frameworks */,
 				25897B3E1E58BF0D00D3563C /* Domain.framework in Embed Frameworks */,
 				BD107F5F1E72986A0043D900 /* NetworkPlatform.framework in Embed Frameworks */,
 			);
@@ -258,6 +249,8 @@
 		25897BED1E58CB8E00D3563C /* Reusable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reusable.swift; sourceTree = "<group>"; };
 		25897BEF1E58CB8E00D3563C /* ViewModelType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewModelType.swift; sourceTree = "<group>"; };
 		26D9AA6E5C5AEC0DEA6B77A7 /* Pods_RealmPlatformTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RealmPlatformTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		48DF84832184911200920FFD /* MovieEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieEntity.swift; sourceTree = "<group>"; };
+		48DF84852184951800920FFD /* RMMovie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RMMovie.swift; sourceTree = "<group>"; };
 		48F0849C217FA5B500E50618 /* MoviesNavigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesNavigator.swift; sourceTree = "<group>"; };
 		48F0849E217FA79700E50618 /* MoviesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesViewController.swift; sourceTree = "<group>"; };
 		48F084A0217FAA5900E50618 /* MoviesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesViewModel.swift; sourceTree = "<group>"; };
@@ -272,7 +265,7 @@
 		515F92201894E6338A4BABFA /* RunLoopThreadScheduler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RunLoopThreadScheduler.swift; sourceTree = "<group>"; };
 		515F92C7826B9C51A1FB4BED /* Repository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
 		515F92E2318F810E8AE29AB7 /* AddMovieViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddMovieViewModel.swift; sourceTree = "<group>"; };
-		515F9359DD575F7E65FE22AF /* PostsUseCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostsUseCase.swift; sourceTree = "<group>"; };
+		515F9359DD575F7E65FE22AF /* MoviesUseCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoviesUseCase.swift; sourceTree = "<group>"; };
 		515F955A785CC73C958268BC /* Observable+Ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Observable+Ext.swift"; sourceTree = "<group>"; };
 		515F96DF719A053AEF410368 /* RMLocation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RMLocation.swift; sourceTree = "<group>"; };
 		515F977CB3763872350F7874 /* Realm+Ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Realm+Ext.swift"; sourceTree = "<group>"; };
@@ -304,7 +297,6 @@
 		BCD8C8C11E73472400F79E3E /* RMCompany.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RMCompany.swift; sourceTree = "<group>"; };
 		BCD8C8C31E73473300F79E3E /* RMPhoto.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RMPhoto.swift; sourceTree = "<group>"; };
 		BCD8C8C51E73474600F79E3E /* RMTodo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RMTodo.swift; sourceTree = "<group>"; };
-		BCD8C8C71E73475000F79E3E /* RMMovie.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RMMovie.swift; sourceTree = "<group>"; };
 		BD107F491E7298690043D900 /* NetworkPlatform.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NetworkPlatform.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD107F4B1E7298690043D900 /* Network.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Network.h; sourceTree = "<group>"; };
 		BD107F4C1E7298690043D900 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -340,7 +332,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				25897B821E58BF4600D3563C /* RealmPlatform.framework in Frameworks */,
-				25897B601E58BF3600D3563C /* CoreDataPlatform.framework in Frameworks */,
 				25897B3D1E58BF0D00D3563C /* Domain.framework in Frameworks */,
 				BD107F5E1E72986A0043D900 /* NetworkPlatform.framework in Frameworks */,
 				967A1BB1BD0E3C2AA361B6CB /* Pods_RxPopMovies.framework in Frameworks */,
@@ -562,10 +553,11 @@
 				BD107F831E72C5740043D900 /* Company.swift */,
 				25897BC31E58C42D00D3563C /* Location.swift */,
 				BD107F7A1E72B7560043D900 /* Photo.swift */,
-				25897BC51E58C42D00D3563C /* Post.swift */,
 				BD107F7C1E72B7750043D900 /* Todo.swift */,
 				BD107F7E1E72B7820043D900 /* User.swift */,
+				25897BC51E58C42D00D3563C /* Post.swift */,
 				48F084AE2180FF7500E50618 /* Movie.swift */,
+				48DF84832184911200920FFD /* MovieEntity.swift */,
 			);
 			path = Entries;
 			sourceTree = "<group>";
@@ -619,7 +611,7 @@
 				BCD8C8C31E73473300F79E3E /* RMPhoto.swift */,
 				515F988220373D06226F4EDE /* RMPost.swift */,
 				BCD8C8C51E73474600F79E3E /* RMTodo.swift */,
-				BCD8C8C71E73475000F79E3E /* RMMovie.swift */,
+				48DF84852184951800920FFD /* RMMovie.swift */,
 			);
 			path = Entities;
 			sourceTree = "<group>";
@@ -667,7 +659,7 @@
 		515F94D09679E59029EB0F24 /* UseCases */ = {
 			isa = PBXGroup;
 			children = (
-				515F9359DD575F7E65FE22AF /* PostsUseCase.swift */,
+				515F9359DD575F7E65FE22AF /* MoviesUseCase.swift */,
 				256289FD1E9182A100A7731C /* UseCaseProvider.swift */,
 			);
 			path = UseCases;
@@ -880,7 +872,6 @@
 			);
 			dependencies = (
 				25897B3C1E58BF0D00D3563C /* PBXTargetDependency */,
-				25897B5F1E58BF3600D3563C /* PBXTargetDependency */,
 				25897B811E58BF4600D3563C /* PBXTargetDependency */,
 				BD107F5D1E72986A0043D900 /* PBXTargetDependency */,
 			);
@@ -1615,6 +1606,7 @@
 				BD107F821E72C5640043D900 /* Address.swift in Sources */,
 				BD107F791E72B7320043D900 /* Album.swift in Sources */,
 				BD107F7D1E72B7750043D900 /* Todo.swift in Sources */,
+				48DF84842184911200920FFD /* MovieEntity.swift in Sources */,
 				BD107F841E72C5740043D900 /* Company.swift in Sources */,
 				48F084AF2180FF7500E50618 /* Movie.swift in Sources */,
 				BD107F7F1E72B7820043D900 /* User.swift in Sources */,
@@ -1654,11 +1646,11 @@
 				515F96794273284723F2848D /* DomainConvertibleType.swift in Sources */,
 				515F9DBB950E2ABDB8D7895B /* RMPost.swift in Sources */,
 				256289FE1E9182A100A7731C /* UseCaseProvider.swift in Sources */,
+				48DF84862184951800920FFD /* RMMovie.swift in Sources */,
 				515F9BD6155258BD0C04DF36 /* RMLocation.swift in Sources */,
 				515F9CD8F2B13D0328B77B6C /* Realm+Ext.swift in Sources */,
 				515F9503C6F079D663CD9072 /* Repository.swift in Sources */,
-				515F94802804A5FEB69837C8 /* PostsUseCase.swift in Sources */,
-				BCD8C8C81E73475000F79E3E /* RMMovie.swift in Sources */,
+				515F94802804A5FEB69837C8 /* MoviesUseCase.swift in Sources */,
 				515F978F1DBE7C45646004F1 /* Observable+Ext.swift in Sources */,
 				BCD8C8C01E73471A00F79E3E /* RMComment.swift in Sources */,
 				BCD8C8C21E73472400F79E3E /* RMCompany.swift in Sources */,
@@ -1737,11 +1729,6 @@
 			isa = PBXTargetDependency;
 			target = 25897AFF1E58BD9100D3563C /* RxPopMovies */;
 			targetProxy = 25897B571E58BF3600D3563C /* PBXContainerItemProxy */;
-		};
-		25897B5F1E58BF3600D3563C /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 25897B4A1E58BF3600D3563C /* CoreDataPlatform */;
-			targetProxy = 25897B5E1E58BF3600D3563C /* PBXContainerItemProxy */;
 		};
 		25897B781E58BF4600D3563C /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
