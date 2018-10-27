@@ -9,47 +9,49 @@
 
 import Foundation
 
-public struct Movie: Codable {
-    let page, totalResults, totalPages: Int
-    let results: [MovieEntity]
-    
-    enum CodingKeys: String, CodingKey {
-        case page
-        case totalResults = "total_results"
-        case totalPages = "total_pages"
-        case results
-    }
-}
 
-struct MovieEntity: Codable {
-    let voteCount, id: Int
-    let video: Bool
-    let voteAverage: Double
-    let title: String
-    let popularity: Double
-    let posterPath: String
-    let originalTitle: String
-    let genreIDS: [Int]
-    let backdropPath: String
-    let adult: Bool
-    let overview, releaseDate: String
+public struct Movie: Codable {
+    public let voteCount, id: Int
+    public let voteAverage: Double
+    public let title: String
+    public let posterPath: String
+    public let overview, releaseDate: String
     
     enum CodingKeys: String, CodingKey {
         case voteCount = "vote_count"
-        case id, video
+        case id = "id"
         case voteAverage = "vote_average"
-        case title, popularity
+        case title = "title"
         case posterPath = "poster_path"
-        case originalTitle = "original_title"
-        case genreIDS = "genre_ids"
-        case backdropPath = "backdrop_path"
-        case adult, overview
+        case overview = "overview"
         case releaseDate = "release_date"
     }
+    
+    public init(id: Int, title:String, voteCount: Int, voteAverage: Double, posterPath: String, overview: String, releaseDate: String ){
+        self.id = id
+        self.title = title
+        self.voteCount = voteCount
+        self.voteAverage = voteAverage
+        self.posterPath = posterPath
+        self.overview = overview
+        self.releaseDate = releaseDate
+    }
+    
+    public init(from decoder: Decoder) throws {
+        let container = try decoder.container(keyedBy: CodingKeys.self)
+        
+        id = try container.decode(Int.self, forKey: .id)
+        title = try container.decode(String.self, forKey: .title)
+        voteCount = try container.decode(Int.self, forKey: .voteCount)
+        posterPath = try container.decode(String.self, forKey: .posterPath)
+        voteAverage = try container.decode(Double.self, forKey: .voteAverage)
+        overview = try container.decode(String.self, forKey: .overview)
+        releaseDate = try container.decode(String.self, forKey: .releaseDate)
+     }
 }
 
 extension Movie: Equatable {
     public static func == (lhs: Movie, rhs: Movie) -> Bool {
-        return lhs.results[0].title == rhs.results[0].title
+        return lhs.title == rhs.title
     }
 }
